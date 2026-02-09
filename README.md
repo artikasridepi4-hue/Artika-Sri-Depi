@@ -1,2 +1,2 @@
 # Artika-Sri-Depi
-Web Pemrograman
+web Pemrograman
