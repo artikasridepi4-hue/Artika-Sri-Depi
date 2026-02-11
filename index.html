@@ -23,9 +23,8 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 20px;
+            margin: 0 15px;
             font-weight: bold;
-            font-size: 16px;
         }
 
         nav a:hover {
@@ -48,21 +47,25 @@
         }
 
         @keyframes gerak {
-            from { transform: translateX(0%); }
-            to { transform: translateX(-100%); }
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
         }
 
         /* HEADER */
         header {
             background-color: #a2d2ff;
-            padding: 50px;
+            padding: 40px;
             text-align: center;
             color: white;
         }
 
         /* SECTION */
         section {
-            padding: 60px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
 
@@ -109,6 +112,7 @@
     <!-- NAVBAR -->
     <nav>
         <a href="#home">Home</a>
+        <a href="#tentang">Tentang Saya</a>
         <a href="#profil">Profil Lengkap</a>
     </nav>
 
@@ -123,27 +127,30 @@
         <p>Membaca adalah Jendela Dunia 📚</p>
     </header>
 
-    <!-- PROFIL LENGKAP -->
-    <section id="profil">
+    <!-- TENTANG SAYA -->
+    <section id="tentang">
         <div class="box">
-            <h2>Profil Lengkap</h2>
-
-            <p><strong>Nama:</strong> Artika Sri Depi</p>
-            <p><strong>NIM:</strong> 230709026</p>
-            <p><strong>Program Studi:</strong> Perpustakaan dan Sains Informasi</p>
-
-            <hr>
-
+            <h2>Halo! 👋</h2>
             <p>
-                Saya mahasiswa Perpustakaan dan Sains Informasi.  
-                Saya dengan bangga menyediakan berbagai sumber bacaan e-book, e-journal,  
+                Saya <strong>Artika Sri Depi</strong>, mahasiswa Perpustakaan dan Sains Informasi.  
+                Saya dengan bangga menyediakan berbagai sumber bacaan e-book, e-journal, 
                 dan tugas-tugas dari perkuliahan Pengembangan Web Perpustakaan.  
                 Semoga website ini dapat membantu dalam menambah wawasan Anda.
             </p>
+        </div>
+    </section>
+
+    <!-- PROFIL LENGKAP -->
+    <section id="profil">
+        <div class="box">
+            <h2>Profil Lengkap Saya</h2>
+            <p><strong>Nama:</strong> Artika Sri Depi</p>
+            <p><strong>Program Studi:</strong> Perpustakaan dan Sains Informasi</p>
+            <p><strong>Bidang Minat:</strong> Literasi Informasi, Digital Library, Web Development</p>
+            <p><strong>Email:</strong> artika@email.com</p>
 
             <div class="social-media">
                 <h3>Media Sosial</h3>
-                <!-- Ganti # dengan link akun asli -->
                 <a href="#" target="_blank">Facebook</a>
                 <a href="#" target="_blank">Instagram</a>
             </div>
@@ -152,7 +159,7 @@
 
     <!-- FOOTER -->
     <footer>
-        © 2026 Perpustakaan Artika Sri Depi | NIM 230709026
+        © 2026 Perpustakaan Artika Sri Depi
     </footer>
 
 </body>
