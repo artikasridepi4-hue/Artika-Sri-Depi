@@ -21,31 +21,36 @@
         .cv-container {
             background: white;
             width: 90%;
-            max-width: 700px;
+            max-width: 800px;
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
             text-align: center;
         }
 
-        .cv-container img {
-            width: 150px;
-            height: 150px;
+        .profile-img {
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
+            border: 5px solid #81d4fa;
             margin-bottom: 20px;
-            border: 4px solid #81d4fa;
         }
 
         h1 {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             color: #0288d1;
+        }
+
+        .subtitle {
+            color: #555;
+            margin-bottom: 25px;
         }
 
         .info {
             text-align: left;
+            line-height: 1.9;
             margin-top: 20px;
-            line-height: 1.8;
         }
 
         .info strong {
@@ -54,36 +59,46 @@
 
         .back-btn {
             display: inline-block;
-            margin-top: 25px;
-            padding: 10px 20px;
+            margin-top: 30px;
+            padding: 10px 25px;
             background-color: #4fc3f7;
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
             transition: 0.3s;
         }
 
         .back-btn:hover {
             background-color: #29b6f6;
         }
+
+        @media (max-width: 600px) {
+            .cv-container {
+                padding: 25px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="cv-container">
-        
-        <!-- FOTO -->
-        <img src="foto.jpg" alt="Foto Artika Sri Depi">
+
+        <!-- FOTO KAMU -->
+        <img src="artika.jpg" alt="Foto Artika Sri Depi" class="profile-img">
 
         <h1>Artika Sri Depi</h1>
-        <p>Mahasiswa Perpustakaan dan Sains Informasi</p>
+        <p class="subtitle">Mahasiswa Perpustakaan dan Sains Informasi</p>
 
         <div class="info">
-            <p><strong>NIM:</strong> 230709026</p>
+            <p><strong>NIM:</strong> 230709072</p>
             <p><strong>Kelas:</strong> B</p>
             <p><strong>Universitas:</strong> Universitas Sumatera Utara</p>
             <p><strong>Email:</strong> artika@email.com</p>
-            <p><strong>Minat:</strong> Literasi Informasi, Pengembangan Web Perpustakaan, Manajemen Koleksi</p>
+            <p><strong>Bidang Minat:</strong> Literasi Informasi, Pengembangan Web Perpustakaan, Manajemen Koleksi</p>
+            <p><strong>Deskripsi Singkat:</strong> 
+                Mahasiswa yang memiliki minat dalam pengembangan perpustakaan digital 
+                serta inovasi layanan informasi berbasis teknologi.
+            </p>
         </div>
 
         <a href="index.html" class="back-btn">Kembali ke Beranda</a>
