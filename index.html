@@ -3,163 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Artika Sri Depi</title>
+    <title>Artika Sri Depi Library</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #bde0fe;
-            scroll-behavior: smooth;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, #b3e5fc, #81d4fa);
+            min-height: 100vh;
+            color: #333;
         }
 
         /* NAVBAR */
-        nav {
-            background-color: #89c2f5;
-            padding: 15px;
+        .navbar {
+            background-color: #81d4fa;
+            padding: 15px 0;
             text-align: center;
         }
 
-        nav a {
+        .navbar a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
+            margin: 0 20px;
+            font-weight: 500;
         }
 
-        nav a:hover {
+        .navbar a:hover {
             text-decoration: underline;
         }
 
-        /* TEKS BERGERAK */
-        .running-text {
-            background-color: #0077b6;
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 60px 20px 30px;
             color: white;
-            padding: 10px 0;
-            overflow: hidden;
-            white-space: nowrap;
         }
 
-        .running-text span {
-            display: inline-block;
-            padding-left: 100%;
-            animation: gerak 12s linear infinite;
+        .hero h1 {
+            font-size: 40px;
+            font-weight: 700;
         }
 
-        @keyframes gerak {
-            from {
-                transform: translateX(0%);
-            }
-            to {
-                transform: translateX(-100%);
-            }
+        .hero p {
+            margin-top: 10px;
+            font-size: 16px;
         }
 
-        /* HEADER */
-        header {
-            background-color: #a2d2ff;
+        /* CARD CONTAINER */
+        .card {
+            background-color: #f5fafd;
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
             padding: 40px;
-            text-align: center;
-            color: white;
-        }
-
-        /* SECTION */
-        section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .box {
-            background-color: white;
-            max-width: 800px;
-            margin: auto;
-            padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            color: #0077b6;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        /* SEARCH BAR */
+        .search-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .search-box input {
+            width: 70%;
+            padding: 12px 20px;
+            border-radius: 30px;
+            border: 2px solid #81d4fa;
+            outline: none;
+        }
+
+        .search-box button {
+            padding: 12px 25px;
+            margin-left: 10px;
+            border-radius: 30px;
+            border: none;
+            background-color: #4fc3f7;
+            color: white;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .search-box button:hover {
+            background-color: #29b6f6;
+        }
+
+        /* JAM OPERASIONAL */
+        .jam {
+            background-color: #e1f5fe;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .jam h4 {
+            margin-bottom: 5px;
+            color: #0288d1;
+        }
+
+        /* INFO */
+        .info {
+            margin-top: 20px;
             line-height: 1.8;
-        }
-
-        /* SOCIAL MEDIA */
-        .social-media a {
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 10px;
-            display: inline-block;
-            border-radius: 20px;
-            background-color: #89c2f5;
-            color: white;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .social-media a:hover {
-            background-color: #0077b6;
         }
 
         /* FOOTER */
         footer {
-            background-color: #89c2f5;
-            color: white;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
+            color: white;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .search-box {
+                flex-direction: column;
+            }
+
+            .search-box input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .search-box button {
+                margin-left: 0;
+                width: 100%;
+            }
         }
     </style>
 </head>
-
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#tentang">Tentang Saya</a>
-        <a href="#profil">Profil Lengkap</a>
-    </nav>
-
-    <!-- TEKS BERGERAK -->
-    <div class="running-text">
-        <span>✨ Selamat datang di website Artika Sri Depi ✨</span>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#">Beranda</a>
+        <a href="#">Layanan</a>
+        <a href="#">Curriculum Vitae</a>
+        <a href="#">Media Sosial</a>
+        <a href="#">Audio dan Video</a>
     </div>
 
-    <!-- HOME -->
-    <header id="home">
-        <h1>Perpustakaan Artika Sri Depi</h1>
-        <p>Membaca adalah Jendela Dunia 📚</p>
-    </header>
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Welcome to Artika Sri Depi Library</h1>
+        <p>Di Taman Ini, Pengetahuan Berbunga.</p>
+    </div>
 
-    <!-- TENTANG SAYA -->
-    <section id="tentang">
-        <div class="box">
-            <h2>Halo! 👋</h2>
-            <p>
-                Saya <strong>Artika Sri Depi</strong>, mahasiswa Perpustakaan dan Sains Informasi.  
-                Saya dengan bangga menyediakan berbagai sumber bacaan e-book, e-journal, 
-                dan tugas-tugas dari perkuliahan Pengembangan Web Perpustakaan.  
-                Semoga website ini dapat membantu dalam menambah wawasan Anda.
-            </p>
+    <!-- Card -->
+    <div class="card">
+        
+        <div class="search-box">
+            <input type="text" placeholder="Cari buku, cerpen, jurnal...">
+            <button>Cari</button>
         </div>
-    </section>
 
-    <!-- PROFIL LENGKAP -->
-    <section id="profil">
-        <div class="box">
-            <h2>Profil Lengkap Saya</h2>
-            <p><strong>Nama:</strong> Artika Sri Depi</p>
-            <p><strong>Program Studi:</strong> Perpustakaan dan Sains Informasi</p>
-            <p><strong>Bidang Minat:</strong> Literasi Informasi, Digital Library, Web Development</p>
-            <p><strong>Email:</strong> artika@email.com</p>
-
-            <div class="social-media">
-                <h3>Media Sosial</h3>
-                <a href="#" target="_blank">Facebook</a>
-                <a href="#" target="_blank">Instagram</a>
-            </div>
+        <div class="jam">
+            <h4>📚 Jam Operasional</h4>
+            <p>Senin – Jumat : 08.00 – 16.00 WIB</p>
         </div>
-    </section>
 
-    <!-- FOOTER -->
+        <div class="info">
+            <strong>Artika Sri Depi</strong><br>
+            230709072 | Kelas B<br>
+            Universitas Sumatera Utara
+        </div>
+
+    </div>
+
     <footer>
-        © 2026 Perpustakaan Artika Sri Depi
+        © 2026 Artika Sri Depi Library
     </footer>
 
 </body>
