@@ -8,9 +8,9 @@
 
 <style>
 :root {
-  --primary:#6BBF9A;
-  --primary-dark:#4CAF84;
-  --text-dark:#2f5d4a;
+  --primary:#A7D8F5;        /* Baby Blue */
+  --primary-dark:#6EC1E4;
+  --text-dark:#2B6E8E;
 }
 
 *{
@@ -21,11 +21,21 @@
 }
 
 body{
-  background:linear-gradient(180deg,#4CAF84 0%,#A8E6CF 100%);
+  background:linear-gradient(180deg,#BFE9FF 0%,#E6F7FF 100%);
   display:flex;
   justify-content:center;
   align-items:center;
   min-height:100vh;
+}
+
+/* LOGIN TEXT DI KANAN ATAS */
+.top-login{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-weight:700;
+  color:white;
+  font-size:18px;
 }
 
 .card{
@@ -93,8 +103,10 @@ button:hover{
 
 <body>
 
+<div class="top-login">Login</div>
+
 <div class="card">
-  <h2>🌿 Login</h2>
+  <h2>🌸 Selamat Datang</h2>
 
   <div class="input-group">
     <label>Email</label>
